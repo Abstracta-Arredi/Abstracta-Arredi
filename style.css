@@ -183,3 +183,26 @@ footer{background:#0b242a;color:#dbe1df;padding:55px 5vw;display:flex;justify-co
   max-height: 500px !important;
   object-fit: contain !important;
 }
+/* FIX IMMAGINE PUBBLICITARIA DESKTOP */
+@media (min-width: 801px) {
+  .ad-panel {
+    width: 100% !important;
+    min-height: 370px !important;
+    max-height: 500px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    overflow: hidden !important;
+  }
+
+  .ad-panel img {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100% !important;
+    max-height: 500px !important;
+    object-fit: contain !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+}
