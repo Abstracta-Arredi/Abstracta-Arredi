@@ -165,3 +165,21 @@ footer{background:#0b242a;color:#dbe1df;padding:55px 5vw;display:flex;justify-co
 @media(max-width:800px){
   .video-panel{border-width:6px!important;border-radius:0!important}
 }
+
+
+/* FIX DEFINITIVO IMMAGINE PUBBLICITARIA */
+.ad-panel {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  overflow: hidden !important;
+  background: #eee9df !important;
+}
+
+.ad-panel img {
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+  max-height: 500px !important;
+  object-fit: contain !important;
+}
