@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://abstracta-arredi.github.io/Abstracta-Arredi/sitemap.xml
