@@ -1,0 +1,74 @@
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;color:#102b32;background:#f5f2ec;font-family:"DM Sans",sans-serif}
+a{text-decoration:none;color:inherit}
+
+.site-header{min-height:86px;padding:12px 5vw;display:flex;align-items:center;justify-content:space-between;gap:25px;background:rgba(245,242,236,.96);backdrop-filter:blur(12px);position:sticky;top:0;z-index:20;border-bottom:1px solid #ddd8ce}
+.brand{display:flex;align-items:center;flex-shrink:0}
+.logo-only img{width:50px;height:50px;border-radius:50%;object-fit:cover;display:block}
+nav{display:flex;align-items:center;justify-content:center;gap:30px;font-size:12px;text-transform:uppercase;letter-spacing:1px}
+nav a:hover,.back:hover{color:#b18b57}
+.back{flex-shrink:0;font-size:11px;text-transform:uppercase;letter-spacing:1px}
+
+.detail{width:100%;max-width:1400px;margin:0 auto;padding:65px 5vw 100px}
+.crumb{font-size:10px;letter-spacing:2px;color:#b18b57;text-transform:uppercase;margin-bottom:30px}
+.detail-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(320px,.85fr);gap:60px;align-items:start}
+
+.main-photo{width:100%;background:#e9e4d9;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.main-photo img{display:block;width:100%;height:auto;max-width:100%;max-height:760px;object-fit:contain}
+
+.info{min-width:0;padding-top:5px}
+.info h1{font:500 clamp(44px,5.5vw,78px)/1 "Playfair Display",serif;margin:0 0 25px;overflow-wrap:break-word}
+.meta{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:32px}
+.pill{border:1px solid #cfc8bb;border-radius:30px;padding:9px 14px;font-size:11px;letter-spacing:.7px}
+.desc{color:#667276;font-size:16px;line-height:1.8}
+.desc p{margin:0 0 20px}
+
+.gallery,.ambient{margin-top:90px}
+.gallery h2,.ambient h2{font:500 clamp(34px,4vw,48px)/1.1 "Playfair Display",serif;margin:0 0 12px}
+.section-note{color:#667276;line-height:1.7;margin:0 0 28px;font-size:14px}
+.gallery-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.gallery-grid a{display:flex;align-items:center;justify-content:center;min-width:0;background:#e9e4d9;overflow:hidden}
+.gallery-grid img{display:block;width:100%;height:auto;max-width:100%;aspect-ratio:1/1.1;object-fit:contain;background:#e9e4d9}
+
+.ambient-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.ambient-grid img{display:block;width:100%;height:auto;max-width:100%;object-fit:contain;background:#e9e4d9}
+
+footer{background:#0b242a;color:#dbe1df;padding:50px 5vw;display:flex;justify-content:space-between;align-items:flex-start;gap:30px;flex-wrap:wrap;font-size:12px}
+.footer-brand{letter-spacing:2px}.footer-brand span{font-weight:300}
+.footer-main p{margin:10px 0 0;color:#aebcbe}
+.social-footer{display:flex;gap:18px;flex-wrap:wrap}
+.social-footer a:hover{color:#d7b779}.footer-copy{color:#aebcbe}
+
+@media(max-width:900px){
+.site-header{min-height:76px;padding:10px 5vw}
+nav{gap:18px;font-size:10px}.back{font-size:10px}
+.detail{padding:50px 6vw 80px}
+.detail-grid{grid-template-columns:1fr;gap:45px}
+.info{padding-top:0}.info h1{font-size:clamp(42px,8vw,64px)}
+.gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+
+@media(max-width:600px){
+.site-header{min-height:68px;padding:9px 5vw;gap:10px}
+.logo-only img{width:44px;height:44px}
+nav{display:none}
+.back{font-size:9px;letter-spacing:.7px;text-align:right}
+.detail{padding:35px 5vw 65px}
+.crumb{margin-bottom:22px;font-size:9px}
+.detail-grid{gap:32px}
+.main-photo img{width:100%;max-height:none}
+.info h1{font-size:clamp(38px,11vw,52px);line-height:1.02;margin-bottom:20px}
+.meta{gap:7px;margin-bottom:25px}
+.pill{padding:8px 11px;font-size:10px}
+.desc{font-size:15px;line-height:1.75}
+.gallery,.ambient{margin-top:60px}
+.gallery h2,.ambient h2{font-size:34px}
+.section-note{font-size:13px;margin-bottom:22px}
+.gallery-grid{grid-template-columns:1fr;gap:16px}
+.gallery-grid img{aspect-ratio:auto}
+.ambient-grid{grid-template-columns:1fr;gap:16px}
+.ambient-grid img{width:100%;height:auto}
+footer{padding:40px 5vw;flex-direction:column;gap:22px}
+.social-footer{flex-direction:column;gap:10px}
+}
